@@ -1,0 +1,270 @@
+/* Resetting margin and padding for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  height: 450px;
+  width: 100%;
+  background-image: linear-gradient(100deg,#2d2e2f 0%,#00000000 100%),
+  url("/Main-Folder/images/background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.options {
+  margin-right: 30px;
+}
+
+.options > button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.options > button:last-of-type {
+  border: 1px solid white;
+}
+
+.logo-wrapper > h1 {
+  font-size: 50px;
+  background-color: white;
+  color: red;
+  padding: 11px 25px;
+  border-radius: 73%;
+}
+
+.heading-wrapper > h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.search-wrapper > * {
+  padding: 15px 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+}
+
+.quick-searches {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.text-wrapper {
+  text-align: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 5px 10px #808080;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card > img {
+  max-width: 100px;
+}
+
+.card > .details {
+  margin-top: 10px;
+}
+
+.para {
+  color: #5f5fad;
+}
+
+.title {
+  color: #131362;
+}
+
+.search {
+  padding: 12px 33px;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  background-color: white;
+  display: flex;
+}
+
+.search > input[type="text"] {
+  border: none;
+  width: 100%;
+}
+
+.login-container, .Signup-Container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  border: 2px solid black;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.login-container.hidden, .Signup-Container.hidden {
+  display: none;
+}
+
+.login-container > *, .Signup-Container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.login-container > h1, .Signup-Container > h1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 35px;
+}
+
+.login-container > .gmail, .login-container > .fb, 
+.Signup-Container > .gmail, .Signup-Container > .fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  border: 2px solid black;
+  margin: 10px -12px;
+  text-decoration: none;
+  color: black;
+}
+
+.Signup-Container > .fb, .Signup-Container > .gmail {
+  margin-top: 10px;
+}
+
+#fblogo, .fb, .gmail {
+  text-decoration: none;
+  gap: 10px;
+}
+
+.login-container > h4, .Signup-Container > h4 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .logo-wrapper > h1 {
+    font-size: 40px;
+  }
+
+  .heading-wrapper > h1 {
+    font-size: 30px;
+  }
+
+  .search-wrapper {
+    flex-direction: column;
+  }
+
+  .search-wrapper > * {
+    width: 90%;
+    max-width: none;
+  }
+
+  .quick-searches {
+    padding: 20px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .cards-wrapper {
+    justify-content: center;
+  }
+
+  .login-container, .Signup-Container {
+    width: 50%;
+    max-width: 90%;
+    top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-wrapper > h1 {
+    font-size: 30px;
+  }
+
+  .heading-wrapper > h1 {
+    font-size: 24px;
+  }
+
+  .options > button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .search-wrapper > * {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .login-container, .Signup-Container {
+    width: auto;
+    max-width: 85%;
+    top: 20px;
+  }
+}

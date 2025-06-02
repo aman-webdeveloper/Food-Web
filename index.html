@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- Bg image area -->
+      <div class="banner">
+        <!-- Navbar -->
+        <div class="nav">
+          <div class="branding"></div>
+          <div class="options">
+            <button id="loginButton">Login</button>
+            <button id="signupButton">Create Account</button>
+          </div>
+        </div>
+
+        <div class="logo-wrapper">
+          <h1>e!</h1>
+        </div>
+
+        <div class="heading-wrapper">
+          <h1>Find the best clinic and best Doctor</h1>
+        </div>
+
+
+        
+        <div class="search-wrapper">
+          <select class="locationDropdown">
+            <option value="0" selected disabled>Please type a location</option>
+            <option value="1">Anna Nagar,Chennai</option>
+            <option value="1">Velachery,Chennai</option>
+            <option value="1">T.Nagar,Chennai</option>
+            <option value="1">Mount Road,Chennai</option>
+        </select>
+        
+        <div class="search">
+          <span class="material-symbols-outlined"> search </span> 
+          <input type="text" placeholder= " Search for restaurants">
+        </div>
+        
+        </div>
+      </div>
+
+      <div class="quick-searches">
+        <div class="text-wrapper">
+          <h1>Quick searches</h1>
+          <p class="para">Discover restorants by type of meal</p>
+        </div>
+
+        <a style="text-decoration: none;" target="_blank" href="breakfast.html">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="images/img-1.png" alt="" />
+            <div class="details">
+              <h3 class="title">Breakfast </h3>
+              <p  class="para"> Start your day with exclusive Breakfast option </p>
+            </div>
+          </div>
+        </a>
+
+          <div class="card">
+            <img src="images/img-2.png" alt="" />
+            <div class="details">
+              <h3  class="title">Lunch</h3>
+              <p  class="para">
+                    Start your day with exclusive Lunch option
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/img-3.png" alt="" />
+            <div class="details">
+              <h3  class="title">Snacks</h3>
+              <p  class="para">
+                Start your day with exclusive Snacks option
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/img-5.png" alt="" />
+            <div class="details">
+              <h3  class="title">Dinner</h3>
+              <p  class="para">
+                Finish your day with exclusive Dinner option
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/img-6.png" alt="" />
+            <div class="details">
+              <h3  class="title">Drink</h3>
+              <p  class="para">
+               Finish your day with exclusive Drink option
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/img-7.png" alt="" />
+            <div class="details">
+              <h3  class="title">Nightlife</h3>
+              <p  class="para">
+                Finish your day with exclusive Dinner option <option value=""></option>
+              </p>
+            </div>
+          </div>
+          <div id="loginContainer" class="login-container hidden">
+            <h1>Login</h1>
+            <a target="_blank" class="gmail" href="https://mail.google.com/mail/u/0/">
+                <span class="material-symbols-outlined"> mail </span> Continue with Gmail
+            </a>
+            <a target="_blank" class="fb" href="https://www.facebook.com/">
+                <i id="fblogo" class="fa fa-facebook-f" style="font-size: 24px"></i> Continue with Facebook
+            </a>
+            <h4>
+                Don't have an account?
+                <span><a href="#signup">Signup</a></span>
+            </h4>
+        </div>
+        
+          <!--login card end here -->
+          <div id="SignupContainer" class="Signup-Container hidden">
+            <h1>Signup</h1>
+            <a target="_blank" class="gmail" href="https://mail.google.com/mail/u/0/">
+                <span class="material-symbols-outlined"> mail </span> Continue with Gmail
+            </a>
+            <a target="_blank" class="fb" href="https://www.facebook.com/">
+                <i id="fblogo" class="fa fa-facebook-f" style="font-size: 24px"></i> Continue with Facebook
+            </a>
+            <h4>
+                Already have an account? 
+                <span><a href="#login">Login</a></span>
+            </h4>
+        </div>
+                    <!--signup card end here -->
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
