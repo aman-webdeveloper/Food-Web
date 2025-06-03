@@ -17,8 +17,8 @@
 .banner {
   height: 450px;
   width: 100%;
-  background-image: linear-gradient(100deg,#2d2e2f 0%,#00000000 100%),
-  url("/Main-Folder/images/background.png");
+ background-image: linear-gradient(100deg, #2d2e2f 0%, #00000000 100%),
+  url("./images/background.png");
   background-size: cover;
   background-position: center;
   display: flex;
